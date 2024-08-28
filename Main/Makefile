@@ -8,6 +8,7 @@ TARGET = my_program
 # 定義依賴關係與編譯規則
 all: $(TARGET)
 
+# 分隔一定要用 "TAB" 不要用 "空格"
 $(TARGET): main.o utils.o
 	$(CXX) $(CXXFLAGS) -o $(TARGET) main.o utils.o
 
